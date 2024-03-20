@@ -6,14 +6,36 @@ print("You find yourself in a giant human size cage made from bronze and metal. 
 
 game = True
 while game:
+    Act1Choice = True
     Act1Choice = input("What do you do?\n"
     "1.Go to the door 2.Check the bar 3.Shift your attention to the ogre 4. peer your eye on the seagull 5.do nothing.\n"
-    "Choose from (1, 2, 3, 4, 5): ")
+    "Choose from (1, 2, 3, 4, 5): \n")
     print(Act1Choice)
     if Act1Choice == "1":
-        print("*Act 1 Story Chosen* 'A Doorway Out'")
+        print("*Act 1 Story Chosen* 'A Doorway Out'\n")
+        Act1Choice = False
+        TheDoor = True
+        while TheDoor:
+            TheDoor = input("You walk to the door a see a lock on it. What do you do?\n"
+            "1. Try to Break the lock with your rock 2. Try to kick the Door Open 3.Charge at the door to break it open 4.Jiggle the handle to open it 5. This it to complicated and give up.\n"
+            "Choose from (1, 2, 3, 4, 5): ")
+            print(TheDoor)
+            if TheDoor == "1":
+                print("You Hold the Rock up above you and in one fast motion, you strike it down onto the Lock. The lock shatters onto the ground and the Rock crumbles in his your hand. the Door swings open.")
+                TheDoor = False
+
     elif Act1Choice == "2":
-        print("*Act 1 Story Chosen* 'Metal Bonds")
+        print("*Act 1 Story Chosen* 'Metal Bonds\n")
+        Act1Choice = False
+
     elif Act1Choice == "3":
-        print("*Act 1 Story Chosen* 'Man & monster'")
-    
+        print("*Act 1 Story Chosen* 'Man & monster'\n")
+        Act1Choice = False
+
+    elif Act1Choice == "4":
+        print("*Act 1 Story Chosen* 'Winged Hope'\n")
+        Act1Choice = False
+
+    elif Act1Choice == "5":
+        print("*Act 1 Story Chosen* 'Waiting On Luck\n")
+        Act1Choice = False
