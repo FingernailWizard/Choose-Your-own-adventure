@@ -23,6 +23,25 @@ while game:
             if TheDoor == "1":
                 print("You Hold the Rock up above you and in one fast motion, you strike it down onto the Lock. The lock shatters onto the ground and the Rock crumbles in his your hand. the Door swings open.")
                 TheDoor = False
+            elif TheDoor == "2":
+                print("You launch your leg at the door and it swings open. But this damages your foot, breaking it.")
+                TheDoor = False
+            elif TheDoor == "3":
+                print("You take afew steps back and charge at the door ramming your sholder into it. As the door swings open you fall out of the cage.\n"
+                "You fall down further and further and the skeletons start to notice you. Just as you think your fall will be the death of you, the pigeon monster snaches you out of the air and rips \n"
+                "out your vital organs leaving the only trace of your body on its lips.\n")
+                TheDoor = False
+                print("\n\n\nYou Died......\n"
+                      "Its your choice to live on....\n"
+                      "good luck in the next life, you will need it.")
+                game = False
+            elif TheDoor == "4":
+                print("you shake the handle and nothing happens.\n")
+                TheDoor = True
+            elif TheDoor == "5":
+                print("you walk away the re-think your choices\n")
+                TheDoor = False
+                Act1choice = True
 
     elif Act1Choice == "2":
         print("*Act 1 Story Chosen* 'Metal Bonds\n")
