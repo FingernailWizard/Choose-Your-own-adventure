@@ -21,8 +21,13 @@ while game:
             "Choose from (1, 2, 3, 4, 5): ")
             print(TheDoor)
             if TheDoor == "1":
-                print("You Hold the Rock up above you and in one fast motion, you strike it down onto the Lock. The lock shatters onto the ground and the Rock crumbles in his your hand. the Door swings open.")
+                print("You Hold the Rock up above you and in one fast motion, you strike it down onto the Lock. The lock shatters onto the ground and the Rock crumbles in his your hand. the Door swings open.\n")
                 TheDoor = False
+                RockDoor = True
+                while RockDoor:
+                    print("From the door swinging open it clangs on a metal bar ecoing a sound through the cavern (not being heard from the hoard below) grabing the attention of the two headed pigeon in the distance.\n"
+                    "You dont have much time, what do you do?\n"
+                    "1. You grab the door and shut it back closed, making it appear to be locked. 2. Jump out the door into the air. 3.  ")
             elif TheDoor == "2":
                 print("You launch your leg at the door and it swings open. But this damages your foot, breaking it.")
                 TheDoor = False
